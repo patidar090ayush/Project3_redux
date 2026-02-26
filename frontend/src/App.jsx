@@ -1,17 +1,14 @@
-import { use, useEffect } from "react";
-import axios from "./api/axiosconfig";
-import { asyncgetusers } from "./store/userActions";
-import { useDispatch, useSelector } from "react-redux";
+import Nav from "./components/Nav";
+import Mainroutes from "./routes/Mainroutes";
+
 
 const App = () => {
-  const data = useSelector((state) => state.user.data);
-  const dispatch = useDispatch();
-  console.log(data);
-  useEffect(() => {
-    dispatch(asyncgetusers());
-  }, []);
-
-  return <div>App</div>;
+  return (
+    <div className="text-white font-thin w-screen h-screen bg-gray-800">
+      <Nav />
+      <Mainroutes />
+    </div>
+  );
 };
 
 export default App;
