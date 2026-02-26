@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Rahul12",
+      "email": "rahul@gmail.com",
+      "password": "1234567"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 101,
+      "title": "iPhone 14",
+      "price": 79999,
+      "brand": "Apple",
+      "category": "Mobile",
+      "stock": 12
+    },
+    {
+      "id": 102,
+      "title": "Samsung Galaxy S21",
+      "price": 69999,
+      "brand": "Samsung",
+      "category": "Mobile",
+      "stock": 20
+
+    },
+    {
+      "id": 103,
+      "title": "HP Pavilion Laptop",
+      "price": 55000,
+      "brand": "HP",
+      "category": "Laptop",
+      "stock": 7
+    }
+  ],
+
+  "cart": [ ]
+}
