@@ -1,24 +1,42 @@
-import { nanoid } from "nanoid";
+// import axios from "../api/axiosconfig";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { nanoid } from "nanoid";
+import { useDispatch } from "react-redux";
+import { asyncLoginUser } from "../store/actions/userActions.jsx";
+
 const Login = () => {
   const { register, reset, handleSubmit } = useForm();
-  const LoginHandler = (data) => {
-    // data.id = nanoid();
-    console.log(data);
-    reset();
+  const dispatch = useDispatch(); 
+  // const LoginHandler = (user) => {
+  //   user.id = nanoid();
+  //   // console.log(user);
+  //   dispatch(asyncLoginUser(user));
+  //   reset();
+  // };
+
+  const LoginHandler = (user) => {
+
+  const cleanUser = {
+    email: user.email.trim(),
+    password: user.password.trim(),
   };
+
+  dispatch(asyncLoginUser(cleanUser));
+  reset();
+};
+
   return (
     <form
       onSubmit={handleSubmit(LoginHandler)}
       className="flex flex-col gap-4 w-75 mx-auto mt-10"
     >
-      <input
+      {/* <input
         {...register("username")}
         className="border border-gray-300 rounded-md p-2"
         type="text"
         placeholder="Username"
-      />
+      /> */}
       <input
         {...register("email")}
         className="border border-gray-300 rounded-md p-2"

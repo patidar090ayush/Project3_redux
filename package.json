@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "json-server": "^1.0.0-beta.9"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patidar090ayush/Project3_redux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patidar090ayush/Project3_redux/issues"
+  },
+  "homepage": "https://github.com/patidar090ayush/Project3_redux#readme"
 }
