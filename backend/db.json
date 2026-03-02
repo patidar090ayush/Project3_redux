@@ -7,32 +7,77 @@
       "password": "123456",
       "isAdmin": true
     }
-
   ],
   "products": [
     {
       "id": "101",
       "title": "iPhone 14",
       "price": 79999,
+      "description": "The latest iPhone with advanced features and improved performance.",
       "brand": "Apple",
+      "image": "https://m.media-amazon.com/images/I/71f80237-8c5c-4c0d-8f2e-7b0a5f1c3b4d._SL1500_.jpg",
       "category": "Mobile",
       "stock": 12
     },
     {
       "id": "102",
       "title": "Samsung Galaxy S21",
+      "description": "A powerful smartphone with a stunning display and excellent camera capabilities.",
       "price": 69999,
       "brand": "Samsung",
       "category": "Mobile",
+      "image": "https://m.media-amazon.com/images/I/91w+qvXjLZL._SL1500_.jpg",
       "stock": 20
     },
     {
       "id": "103",
       "title": "HP Pavilion Laptop",
+      "description": "A versatile laptop suitable for both work and entertainment, featuring a sleek design and powerful performance.",
       "price": 55000,
       "brand": "HP",
+      "image": "https://m.media-amazon.com/images/I/71f80237-8c5c-4c0d-8f2e-7b0a5f1c3b4d._SL1500_.jpg",
       "category": "Laptop",
       "stock": 7
+    },
+    {
+      "id": "90d2",
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "title": "fewf",
+      "price": 1212,
+      "description": "dc",
+      "category": "Tablet"
+    },
+    {
+      "id": "37b8",
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "title": "abcd",
+      "price": 1122,
+      "description": "abbccdd",
+      "category": "Laptop"
+    },
+    {
+      "id": "60f6",
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "title": "Product 1",
+      "price": 1234,
+      "description": "This is the dummy product",
+      "category": "Tablet"
+    },
+    {
+      "id": "978b",
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "title": "product 2",
+      "price": 0,
+      "description": "hello",
+      "category": "Laptop"
+    },
+    {
+      "id": "a96f",
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "title": "Product 3",
+      "price": 0,
+      "description": "hello",
+      "category": "Mobile"
     }
   ],
   "carts": []

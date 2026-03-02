@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { asyncloadproducts } from "../store/actions/productActions";
 
-const products = () => {
+const Products = () => {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(asyncloadproducts());
+  }, []);
+
   return (
-    <div>products</div>
-  )
-}
+    <div>
+      products page
+    </div>
+  );
+};
 
-export default products
+export default Products;
